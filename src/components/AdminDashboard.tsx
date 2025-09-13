@@ -30,6 +30,7 @@ import {
   MoreVertical
 } from 'lucide-react';
 import { Service, ContactInfo, VisitorData, Testimonial } from '../types';
+import ImageUpload from './ui/ImageUpload';
 
 interface AdminDashboardProps {
   services: Service[];
@@ -743,31 +744,13 @@ export default function AdminDashboard({
                     </div>
 
                     <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-1">
-                        Profile Picture URL
-                      </label>
-                      <input
-                        type="url"
-                        value={editingTestimonial.avatar}
-                        onChange={(e) => setEditingTestimonial({
+                      <ImageUpload
+                        currentImage={editingTestimonial.avatar}
+                        onImageChange={(imageUrl) => setEditingTestimonial({
                           ...editingTestimonial,
-                          avatar: e.target.value
+                          avatar: imageUrl
                         })}
-                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                        placeholder="https://example.com/photo.jpg"
                       />
-                      {editingTestimonial.avatar && (
-                        <div className="mt-2">
-                          <img
-                            src={editingTestimonial.avatar}
-                            alt="Preview"
-                            className="w-16 h-16 rounded-full object-cover"
-                            onError={(e) => {
-                              e.currentTarget.src = 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop';
-                            }}
-                          />
-                        </div>
-                      )}
                     </div>
                   </div>
 
