@@ -461,29 +461,11 @@ export default function AdminDashboard({
                         })}
                         className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                       >
-                        {categories.map(category => (
-                          <option key={category} value={category}>{category}</option>
-                        ))}
-                        <option value="New Category">Add New Category</option>
+                        <option value="Products">Products</option>
+                        <option value="Services">Services</option>
                       </select>
                     </div>
 
-                    {editingService.category === 'New Category' && (
-                      <div>
-                        <label className="block text-sm font-medium text-gray-700 mb-1">
-                          New Category Name
-                        </label>
-                        <input
-                          type="text"
-                          onChange={(e) => setEditingService({
-                            ...editingService,
-                            category: e.target.value
-                          })}
-                          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                          placeholder="Enter category name"
-                        />
-                      </div>
-                    )}
                   </div>
 
                   <div className="flex justify-end space-x-3 mt-6">
