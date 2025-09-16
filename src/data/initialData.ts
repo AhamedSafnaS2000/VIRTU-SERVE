@@ -1,26 +1,6 @@
 import { Service, ContactInfo, VisitorData, Testimonial } from '../types';
 
 export const initialServices: Service[] = [
-  // Products
-  {
-    id: '13',
-    title: 'Customized Sticker Creation',
-    description: 'Unique, high-quality stickers customized to suit personal, branding, or business requirements.',
-    category: 'Products'
-  },
-  {
-    id: '14',
-    title: 'Customized Bookmarks',
-    description: 'Beautifully designed, printable bookmarks tailored with your favorite pictures, quotes, or themes.',
-    category: 'Products'
-  },
-  {
-    id: '15',
-    title: 'Calligraphy Designs',
-    description: 'Elegant and artistic calligraphy creations, perfect for gifts, branding, and personalized projects.',
-    category: 'Products'
-  },
-  
   // Services
   {
     id: '1',
@@ -58,6 +38,8 @@ export const initialServices: Service[] = [
     description: 'Specialized services for exam preparation, including multiple-choice questions and academic typing.',
     category: 'Services'
   },
+  
+  // Services
   {
     id: '7',
     title: 'Professional CV & Resume Optimization',
@@ -88,11 +70,31 @@ export const initialServices: Service[] = [
     description: 'Well-structured and professionally designed ebooks on diverse topics to showcase expertise and add value.',
     category: 'Services'
   },
+  
+  // Services
   {
     id: '12',
     title: 'Design Services for Gem Business Owners',
     description: 'Creative, industry-focused designs that enhance brand identity and appeal in the gem and jewelry sector.',
     category: 'Services'
+  },
+  {
+    id: '13',
+    title: 'Customized Sticker Creation',
+    description: 'Unique, high-quality stickers customized to suit personal, branding, or business requirements.',
+    category: 'Products'
+  },
+  {
+    id: '14',
+    title: 'Customized Bookmarks',
+    description: 'Beautifully designed, printable bookmarks tailored with your favorite pictures, quotes, or themes.',
+    category: 'Products'
+  },
+  {
+    id: '15',
+    title: 'Calligraphy Designs',
+    description: 'Elegant and artistic calligraphy creations, perfect for gifts, branding, and personalized projects.',
+    category: 'Products'
   },
   {
     id: '16',
